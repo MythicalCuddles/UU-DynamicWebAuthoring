@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    vertical-align: center;
+}
+
+thead {
+    text-align: left;
+}
+
+#makeHoverable tr:hover {
+    background-color: ivory;
+    color: darkgoldenrod;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: palevioletred;
+}
+
+a:hover {
+    text-decoration: none;
+    color: crimson;
+}
+
+footer {
+    text-align: center;
+    font-size: .7em;
+}
+
+.customFont {
+    font-family: 'Roboto', sans-serif, serif;
+}
+
+figure img {
+    border: 1px solid black;
+    height: auto;
+    max-width: 60%;
+}

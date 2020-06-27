@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Execute For Loop" onclick="countUsingFor()">
+    <input type="button" value="Execute While Loop" onclick="countUsingWhile()">
+    <input type="button" value="Execute Do/While Loop" onclick="countUsingDoWhile()">
+    
+    <br><br><br><br>
+
+    <form name="countingForm" method="dialog">
+        <label for="countTo">Count to:</label>
+        <br>
+        <input type="text" size="20" name="countTo" placeholder="Count to number">
+        <br><br>
+        <input type="button" value="Count" onclick="funCountTo()">
+    </form>
+
+    <br><br><br><br>
+
+    <form name="countingDown" method="dialog">
+        <label for="countFrom">Count from: (This should be higher than count to)</label>
+        <br>
+        <input type="text" size="20" name="countFrom" placeholder="Count from (Max)">
+        <br><br>
+        <label for="countTo">Count to: (This should be lower than count from)</label>
+        <br>
+        <input type="text" size="20" name="countTo" placeholder="Count to (Min)">
+        <br><br>
+        <input type="button" value="Start Counting" onclick="countDown()">
+    </form>
+</body>
+</html>

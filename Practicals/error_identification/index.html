@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Finding Errors</title>
+    </head>
+
+    <body bgColor="yellow" text="blue"> <!-- bgColour should be bgColor -->
+        <script type="text/javascript"> // ">" is missing
+            var course = "imd/ict"; // imd/ict should be a string as imd or ict has not been defined as a variable
+            var type = "full time";
+            var year = 2;
+            var function1 = "learning"; // Variables and functions should begin with a letter.
+            year += 2; // Not an error but could cause problems - missing semi-colon.
+            
+            // 1function - Variables should begin with a letter.
+            // corse - Incorrect variable name, should be course.
+            document.write("I am " + function1 + " " + course + " for " + year + " years, " + type);
+        </script>
+    </body>
+</html>
