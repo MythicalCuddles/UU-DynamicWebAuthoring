@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+body {
+    background-image: url("../media/background.png");
+}
+
+#container {
+    background-color: rgba(255, 255, 255, .5);
+    width: 80%;
+    min-width: 50;
+    margin: auto;
+    text-align: center;
+    padding: 1%;
+}
+
 table {
-    width: 100%;
+    width: 97%;
+    background-color: rgba(255, 255, 255, .5);
+    margin: auto;
+    text-align: left;
 }
 
 table, th, td {
@@ -11,8 +27,8 @@ table, th, td {
     vertical-align: center;
 }
 
-thead {
-    text-align: left;
+thead, tfoot {
+    text-align: center;
 }
 
 #makeHoverable tr:hover {
@@ -26,17 +42,17 @@ nav {
 
 a {
     text-decoration: none;
-    color: palevioletred;
+    color: rgb(216, 50, 105);
 }
 
 a:hover {
     text-decoration: none;
-    color: crimson;
+    color: rgb(116, 0, 23);
 }
 
 footer {
     text-align: center;
-    font-size: .7em;
+    font-size: .8em;
 }
 
 .customFont {

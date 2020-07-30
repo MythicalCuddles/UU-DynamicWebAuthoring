@@ -9,122 +9,136 @@
         <script src="js/main.js"></script>
     </head>
     <body>
-        <h1>COM353 Dynamic Web Authoring</h1>
-        <h2>Learning Log - Melissa Brennan</h2>
+        <div id="container">
+            <h1>COM353 Dynamic Web Authoring</h1>
+            <h2>Learning Log - Melissa Brennan</h2>
 
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="entry-template.html">Entry Template</a>
-        </nav>
+            <nav>
+                <a href="index.html">Practical Entries</a> | 
+                <a href="project_entries.html">Project Entries</a>
+            </nav>
 
-        <hr />
+            <hr />
 
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="2">Introduction to JS and CSS + Making a Website Accessible</th>
-                </tr>
-                <tr>
-                    <th>Entry 2</th>
-                    <th>18<sup>th</sup> June 2020</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="2">
-                        <h3>JavaScript</h3>
-                        <p>Today I learned how to use some features found in JavaScript, including:</p>
-                        <ul>
-                            <li>Creating functions & calling them through events.</li>
-                            <li>Creating a pop-up box to appear when the function is called.</li>
-                            <li>Creating variables and assigning values.</li>
-                            <li>Using the question mark operator (known as the ternary operator) to assign a value to a variable based on another variable.</li>
-                            <li>Using const(ant) variables to learn that they are variables thats value can not be changed.</li>
-                        </ul>
-                        <p>Here is some images to show my work:</p>
-                        <figure>
-                            <img src="media/entry2/jscode.png" alt="JavaScript Code">
-                            <figcaption>Fig.1 - JavaScript Code showing functions, variables, string concatenation and using the ternary operator.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="media/entry2/changeconst.png" alt="Error returned from attempting to change const value">
-                            <figcaption>Fig.2 - Console showing the error displayed when attempting to change a const value.</figcaption>
-                        </figure>
-                        <br />
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Entry 2 - Introduction to JS and CSS + Making a Website Accessible</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3">18<sup>th</sup> June 2020</th>
+                    </tr>
+                    <tr>
+                        <th width="30%"><a href="entry1.html">Previous Entry</a></th>
+                        <th width="40%"><a href="#bottomLink" id="topLink">Go to Bottom</a></th>
+                        <th width="30%"><a href="entry3.html">Next Entry</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h3>JavaScript</h3>
+                            <p>Today I learned how to use some features found in JavaScript, including:</p>
+                            <ul>
+                                <li>Creating functions & calling them through events.</li>
+                                <li>Creating a pop-up box to appear when the function is called.</li>
+                                <li>Creating variables and assigning values.</li>
+                                <li>Using the question mark operator (known as the ternary operator) to assign a value to a variable based on another variable.</li>
+                                <li>Using const(ant) variables to learn that they are variables thats value can not be changed.</li>
+                            </ul>
+                            <p>Here is some images to show my work:</p>
+                            <figure>
+                                <img src="media/entry2/jscode.png" alt="JavaScript Code">
+                                <figcaption>Fig.1 - JavaScript Code showing functions, variables, string concatenation and using the ternary operator.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/entry2/changeconst.png" alt="Error returned from attempting to change const value">
+                                <figcaption>Fig.2 - Console showing the error displayed when attempting to change a const value.</figcaption>
+                            </figure>
+                            <br />
 
-                        <h3>JAVASCRIPT  BUTTONS!!!</h3>
-                        <p>Here's a few functions I created. These buttons have a onclick event, that executes a script when the user clicks on the button.</p>
-                        <button onclick="popupHelloWorld()">Hello World</button>
-                        <button onclick="changeToDate(this)">Click for Date</button>
-                        <button onclick="document.getElementById('clickMeButtonText').innerHTML = ':O'">Click Me</button>
-                        <span id="clickMeButtonText"></span>
-                        <button onclick="variables()">Variables</button>
-                        <p>(These display on popups, therefore if you have an extension enable to block popups, you'll need to disable it to see these work.)</p>
-                        <br />
+                            <h3>JAVASCRIPT  BUTTONS!!!</h3>
+                            <p>Here's a few functions I created. These buttons have a onclick event, that executes a script when the user clicks on the button.</p>
+                            <button onclick="popupHelloWorld()">Hello World</button>
+                            <button onclick="changeToDate(this)">Click for Date</button>
+                            <button onclick="document.getElementById('clickMeButtonText').innerHTML = 'You clicked the button!'">Click Me</button>
+                            <span id="clickMeButtonText"></span>
+                            <button onclick="variables()">Variables</button>
+                            <p>(These display on popups, therefore if you have an extension enable to block popups, you'll need to disable it to see these work.)</p>
+                            <br />
 
-                        <h3>CSS</h3>
-                        <p>
-                            I also added onto my CSS from the last entry. The last entry, I had already looked into using selectors such as :hover, and used this to change the style of some elements on the webpages.
-                            Today, I seen that we can use CSS to change the font of text on a webpage. I looked into attempting to import a custom font to use on the webpage, which I was able to achieve with the help of Google Fonts.
-                            I set the font of the footer text to appear as 'Roboto', and to fall back on Sans-Serif followed by Serif if the font is unable to load.
-                        </p>
-                        <br />
+                            <h3>CSS</h3>
+                            <p>
+                                I also added onto my CSS from the last entry. The last entry, I had already looked into using selectors such as :hover, and used this to change the style of some elements on the webpages.
+                                Today, I seen that we can use CSS to change the font of text on a webpage. I looked into attempting to import a custom font to use on the webpage, which I was able to achieve with the help of Google Fonts.
+                                I set the font of the footer text to appear as 'Roboto', and to fall back on Sans-Serif followed by Serif if the font is unable to load.
+                            </p>
+                            <br />
 
-                        <h3>Practical Work</h3>
-                        
-                        <h4>Web Accessibility</h4>
-                        <p>Through looking at the accessibility of practical_1, I had added a few changes to make the webpage more accessible, which were:</p>
-                        <ul>
-                            <li>I added links at the top and bottom of the page to allow the user to jump directly to where they want to be. </li>
-                            <li>I modified the 'alt' attribute of the image on the webpage to provide a better description of the image. </li>
-                            <li>I added a summary to the table to provide a brief summary of what information is being shown.</li>
-                            <li>I also added the border attribute to the table to show a border in the event the stylesheet does not display.</li>
-                            <li>I changed the buttons on the form to inputs, and added the value attribute to describe what the buttons do.</li>
-                            <li>I had already assigned a label to each of the text inputs before their input tag, therefore no changes were made here.</li>
-                            <li>I had already assigned a label to the radio buttons and check boxes after their input tag, therefore no changes were made here.</li>
-                            <li>I added the 'title' attribute to each of the input and textarea tags to describe their value.</li>
-                        </ul>
-                        <p>This can be viewed <a href="../practical_1_access/index.html" target="_BLANK">here.</a></p>
+                            <h3>Practical Work</h3>
+                            
+                            <h4>Web Accessibility</h4>
+                            <p>Through looking at the accessibility of practical_1, I had added a few changes to make the webpage more accessible, which were:</p>
+                            <ul>
+                                <li>I added links at the top and bottom of the page to allow the user to jump directly to where they want to be. </li>
+                                <li>I modified the 'alt' attribute of the image on the webpage to provide a better description of the image. </li>
+                                <li>I added a summary to the table to provide a brief summary of what information is being shown.</li>
+                                <li>I also added the border attribute to the table to show a border in the event the stylesheet does not display.</li>
+                                <li>I changed the buttons on the form to inputs, and added the value attribute to describe what the buttons do.</li>
+                                <li>I had already assigned a label to each of the text inputs before their input tag, therefore no changes were made here.</li>
+                                <li>I had already assigned a label to the radio buttons and check boxes after their input tag, therefore no changes were made here.</li>
+                                <li>I added the 'title' attribute to each of the input and textarea tags to describe their value.</li>
+                            </ul>
+                            <p>This can be viewed <a href="../practical_1_access/index.html" target="_BLANK">here.</a></p>
 
-                        <h4>Introduction to JavaScript - ImageSwap</h4>
-                        <p>The webpage that I'm going to talk about in this section is available <a href="../javascript_intro/index.html" target="_BLANK">here.</a></p>
-                        <figure>
-                            <img src="#" alt="Document Object Model of Image Swap">
-                            <figcaption>Fig.3 Drawing of the Document Object Model for the ImageSwap webpage.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="media/entry2/mousejs.png" alt="HTML and JavaScript Code that flips image when hovering over image">
-                            <figcaption>Fig.4 HTML and JavaScript Code that changes the image when the user hovers over it.</figcaption>
-                        </figure>
-                        <p>
-                            The code seen in fig.4 shows an image and makes the image a link. The link uses two JavaScript events, which are 'onmouseover' and 'onmouseout'. These events are triggered using the mouse.
-                            Once the user moves their mouse over the image, the event 'onmouseover' is called, which finds the photo and modifies the source (src) to a new value.
-                            When the user moves their mouse out of the image, the event 'onmouseout' is called, finding the photo again and modifying the source again.
-                            The photo is able to be found in the document as the img tag has an attribute 'name', containing the value 'photo', which the events use.
-                        </p>
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th colspan="2">Melissa Brennan</th>
-                </tr>
-            </tfoot>
-        </table>
+                            <h4>Introduction to JavaScript - ImageSwap</h4>
+                            <p>The webpage that I'm going to talk about in this section is available <a href="../javascript_intro/index.html" target="_BLANK">here.</a></p>
+                            <figure>
+                                <img src="#" alt="Document Object Model of Image Swap">
+                                <figcaption>Fig.3 Drawing of the Document Object Model for the ImageSwap webpage.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/entry2/mousejs.png" alt="HTML and JavaScript Code that flips image when hovering over image">
+                                <figcaption>Fig.4 HTML and JavaScript Code that changes the image when the user hovers over it.</figcaption>
+                            </figure>
+                            <p>
+                                The code seen in fig.4 shows an image and makes the image a link. The link uses two JavaScript events, which are 'onmouseover' and 'onmouseout'. These events are triggered using the mouse.
+                                Once the user moves their mouse over the image, the event 'onmouseover' is called, which finds the photo and modifies the source (src) to a new value.
+                                When the user moves their mouse out of the image, the event 'onmouseout' is called, finding the photo again and modifying the source again.
+                                The photo is able to be found in the document as the img tag has an attribute 'name', containing the value 'photo', which the events use. 
+                                This action can be seen in fig.5 below.
+                            </p>
+                            <figure>
+                                <img src="media/entry2/mouseover.gif" alt="Animated image showing the effect of the cursor moving over the image.">
+                                <figcaption>Fig.5 Animated image showing the image swap when the cursor moves over the image.</figcaption>
+                            </figure>
 
-        <hr />
-        <footer class="customFont">
-            <p>
-                Learning Log by Melissa Brennan • Student ID B00714027<br />
-                Practicals and Logs are available to view on <a target="_BLANK" href="https://com353.melissabrennan.dev">my website</a><br />
-                All code is available to view on <a target="_BLANK" href="https://github.com/MythicalCuddles/UU-DynamicWebAuthoring">my GitHub</a><br />
-                This page was created on Day 2
-            </p>
-            <p>
-                <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
-                </a>
-            </p>
-        </footer>
+                            <h4>Introduction to JavaScript - Rollover Links</h4>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th width="30%"><a href="entry1.html">Previous Entry</a></th>
+                        <th width="40%"><a href="#topLink" id="bottomLink">Go to Top</a></th>
+                        <th width="30%"><a href="entry3.html">Next Entry</a></th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <hr />
+            <footer class="customFont">
+                <p>
+                    Learning Log by <a target="_BLANK" href="https://com353.melissabrennan.dev">Melissa Brennan</a> • Student ID B00714027<br />
+                    All code is available to view on <a target="_BLANK" href="https://github.com/MythicalCuddles/UU-DynamicWebAuthoring">my GitHub</a><br />
+                    Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a><br />
+                </p>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                    </a>
+                </p>
+            </footer>
+        </div>
     </body>
 </html>
