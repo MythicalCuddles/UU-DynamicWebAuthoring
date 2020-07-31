@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <table border="3" cellpadding="6">
+        <script language="javascript">
+            // for loop which loops 3 times
+            for(j = 1; j <= 3; j++) {
+                // everytime the loop runs, a new table row is created in the table.
+                document.write('<tr>');
+                // nested for loop, which loops 5 times for each time the for loop above executes.
+                for(i = 1; i <= 5; i++) {
+                    // everytime the nested loop runs, create table data for the row.
+                    // each table data/field, input the value of i * j.
+                    document.write('<td align="right">', i*j, '</td>');
+                    /* expected output would be the calculation of...
+                        1*1, 2*1, 3*1, 4*1, 5*1
+                        1*2, 2*2, 3*2, 4*2, 5*2
+                        1*3, 2*3, 3*3, 4*3, 5*3
+                        - each result is (i*j), with a total of 3 rows being created due to the outer loop.
+                    */
+                }
+                // close each row after each time the outer loop executes.
+                document.write('</tr>');
+            }
+        </script>
+    </table>
+</body>
+</html>
