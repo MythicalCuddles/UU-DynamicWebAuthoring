@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function t1DisplayName() {
+            var inputtedName = document.getElementById("inputName").value;
+
+            if(inputtedName) { // this will return true if the value of inputtedName is NOT: null, undefined, NaN, empty, 0 /or/ false.
+                document.getElementById("title").innerHTML = "Welcome to my homepage, " + inputtedName;
+            }
+            else {
+                alert("Please enter your name before pressing the display button.");
+            }
+        }
+    </script>
+    <title>Task 1b</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Welcome to my homepage</h1>
+
+        <input type="text" width="20" placeholder="Your name" id="inputName" />
+        <input type="button" onclick="t1DisplayName();" value="Display" />
+    </div>
+</body>
+</html>
