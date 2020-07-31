@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>JavaScript - Intro to Arrays</title>
+        <script>
+            function displayText(inputText) {
+                document.write(inputText);
+                document.write("<br>");
+            }
+            
+            function showCampuses() {
+                document.getElementById("campusInformation").style.display = "block";
+            }
+
+            function hideCampuses() {
+                document.getElementById("campusInformation").style.display = "none";
+
+                document.getElementById("belfastCampus").checked = false;
+                document.getElementById("coleraineCampus").checked = false;
+                document.getElementById("jordanstownCampus").checked = false;
+                document.getElementById("mageeCampus").checked = false;
+            }
+
+            function onLoad() {
+                hideCampuses();
+            }
+
+            function displayMyInfo() {
+                var userName = document.getElementById("inputtedName").value;
+                var userUniversity = (document.getElementById("ulsterUniversity").checked) ? "University of Ulster" : "Queens University Belfast";
+                var userCampus;
+                var userCourse;
+
+                if(!userName) {
+                    alert("Please enter your name.");
+                    return;
+                }
+
+                if(!document.getElementById("ulsterUniversity").checked && !document.getElementById("queensUniversity").checked) {
+                    alert("Please select which university you attend.");
+                    return;
+                }
+
+                if(userUniversity == universities[0]) { // is Ulster University
+                    if(document.getElementById("belfastCampus").checked) {
+                        userCampus = ulsterCampuses[0];
+                    }
+                    else if(document.getElementById("coleraineCampus").checked) {
+                        userCampus = ulsterCampuses[1];
+                    }
+                    else if(document.getElementById("jordanstownCampus").checked) {
+                        userCampus = ulsterCampuses[2];
+                    }
+                    else if(document.getElementById("mageeCampus").checked) {
+                        userCampus = ulsterCampuses[3];
+                    }
+                    else {
+                        alert("Please select which campus you attend.");
+                        return;
+                    }
+                }
+
+                if(document.getElementById("softwareEngineering").checked) {
+                    userCourse = courses[0];
+                }
+                else if(document.getElementById("computerScience").checked) {
+                    userCourse = courses[1];
+                }
+                else if(document.getElementById("informationCommunicationTechnology").checked) {
+                    userCourse = courses[2];
+                }
+                else if(document.getElementById("computingSystems").checked) {
+                    userCourse = courses[3];
+                }
+                else {
+                    alert("Please select which course you are currently doing.");
+                    return;
+                }
+
+                displayText("<h1>Hello " + userName + "!</h1>");
+                displayText("You are a student at " + userUniversity);
+                if(userCampus) {
+                    displayText("You are studying at the " + userCampus + " campus.");
+                }
+                displayText("You are currently studying " + userCourse);
+            }
+
+            // Adding values to an array using the index values.
+            var universities = new Array(2);
+            universities[0] = "University of Ulster";
+            universities[1] = "Queens University Belfast";
+            console.log(universities);
+
+            // Creating an array using push method to add elements to the array.
+            var ulsterCampuses = new Array();
+            ulsterCampuses.push("Belfast");
+            ulsterCampuses.push("Coleraine");
+            ulsterCampuses.push("Jordanstown");
+            ulsterCampuses.push("Magee");
+            console.log(ulsterCampuses);
+
+            // Declaring and Initialise an array using one line.
+            var courses = ["Software Engineering", "Computer Science", "Information Communication Technology", "Computing Systems"];
+
+            //displayText("I'm a third year " + ulsterCourses[4] + " student in " + universities[0] + " at " + ulsterCampuses[0] + ". ");
+            //displayText("My friend is a " + ulsterCourses[(Math.floor(Math.random() * ulsterCourses.length))] + " student at " + universities[(Math.floor(Math.random() * universities.length))]);
+        </script>
+    </head>
+
+    <body onload="onLoad()">
+        <h1>Enter your details:</h1>
+
+        <label for="inputtedName">Your name: </label>
+        <input type="text" id="inputtedName" placeholder="Jane Doe">
+
+        <br>
+
+        <p>Which university do you attend?</p>
+        <input type="radio" name="university" value="University of Ulster" id="ulsterUniversity" onclick="showCampuses()">
+        <label for="ulsterUniversity">University of Ulster</label>
+        <br>
+        <input type="radio" name="university" value="Queens University Belfast" id="queensUniversity" onclick="hideCampuses()">
+        <label for="queensUniversity">Queens University Belfast</label>
+
+        <br>
+        
+        <div id="campusInformation">
+            <p>Which campus do you attend?</p>
+            <input type="radio" name="campus" value="Belfast" id="belfastCampus">
+            <label for="belfastCampus">Belfast</label>
+            <br>
+            <input type="radio" name="campus" value="Coleraine" id="coleraineCampus">
+            <label for="coleraineCampus">Coleraine</label>
+            <br>
+            <input type="radio" name="campus" value="Jordanstown" id="jordanstownCampus">
+            <label for="jordanstownCampus">Jordanstown</label>
+            <br>
+            <input type="radio" name="campus" value="Magee" id="mageeCampus">
+            <label for="mageeCampus">Magee</label>
+            
+            <br>
+        </div>
+
+        <p>Which course are you currently doing?</p>
+        <input type="radio" name="course" value="Software Engineering" id="softwareEngineering">
+        <label for="softwareEngineering">Software Engineering</label>
+        <br>
+        <input type="radio" name="course" value="Computer Science" id="computerScience">
+        <label for="computerScience">Computer Science</label>
+        <br>
+        <input type="radio" name="course" value="Information Communication Technology" id="informationCommunicationTechnology">
+        <label for="informationCommunicationTechnology">Information Communication Technology</label>
+        <br>
+        <input type="radio" name="course" value="Computing Systems" id="computingSystems">
+        <label for="computingSystems">Computing Systems</label>
+
+        <br><br>
+
+        <input type="button" value="Display" onclick="displayMyInfo()">
+    </body>
+</html>
