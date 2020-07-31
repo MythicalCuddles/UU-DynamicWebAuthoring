@@ -6,7 +6,36 @@
     <script src="js/main.js"></script>
     <title>Task 3</title>
 </head>
-<body>
-    
+<body onload="onLoad()">
+    <div>
+        <label for="markOne">First Mark:</label>
+        <input type="text" id="markOne" placeholder="Mark #1">
+
+        <br>
+        
+        <label for="markTwo">Second Mark:</label>
+        <input type="text" id="markTwo" placeholder="Mark #2">
+        
+        <br>
+        
+        <label for="markThree">Third Mark:</label>
+        <input type="text" id="markThree" placeholder="Mark #3">
+        
+        <br>
+        
+        <label for="markFour">Fourth Mark:</label>
+        <input type="text" id="markFour" placeholder="Mark #4">
+
+        <br>
+        <br>
+
+        <input type="button" value="Calculate Average" onclick="calculateAverage()">
+
+        <br>
+
+        <p id="averageMark"></p>
+        <p id="classification"></p>
+        <p id="feedback"></p>
+    </div>
 </body>
 </html>
