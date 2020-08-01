@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Min data validation</title>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <form>
+        <table>
+            <thead>
+                <th colspan="2">Car Insurance Candidate Classification</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="forename">Forename:</label></td>
+                    <td><input type="text" id="forename" placeholder="Please enter your forename"></td>
+                </tr>
+                <tr>
+                    <td><label for="surname">Surname:</label></td>
+                    <td><input type="text" id="surname" placeholder="Please enter your surname"></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="text" id="age" placeholder="Please enter your age"></td>
+                </tr>
+                <tr>
+                    <td><label for="maritalStatus">Marital Status:</label></td>
+                    <td>
+                        <select name="maritalStatus" id="maritalStatus">
+                            <option value="undefined" disabled selected hidden>Please select</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr colspan="2">
+                    <td><input type="button" value="Find Insurance Class" onclick="findInsuranceClass()"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="2" id="result"></th>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
