@@ -7,6 +7,12 @@ function checkAnswers() {
         uAnswers.push(getSelectValue("question" + i));
     }
 
+    // check to see if user has answered all questions
+    if(uAnswers.includes("unanswered")) {
+        alert("Please attempt to answer all the questions before submitting your answers.");
+        return;
+    }
+
     console.log(uAnswers);
     console.log(cAnswers);
 
