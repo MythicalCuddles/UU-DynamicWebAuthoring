@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <h1>Online Quiz on XHTML</h1>
+    <form name="xhtmlQuiz">
+        <p><strong>Question 1: What does XHTML stand for?</strong></p>
+        <select name="question1" id="question1">
+            <option value="unanswered" disabled selected hidden>Select your answer</option>
+            <option value="answer1">EXtreme HyperText Markup Language</option>
+            <option value="answer2">EXtensible HyperText Markup Language</option>
+            <option value="answer3">EXtensible HyperText Marking Language</option>
+            <option value="answer4">EXtra Hyperlinks and Text Markup Language</option>
+        </select>
+
+        <p><strong>Question 2: What is the correct XHTML for paragraph?</strong></p>
+        <select name="question2" id="question2">
+            <option value="unanswered" disabled selected hidden>Select your answer</option>
+            <option value="answer1">&lt;/p&gt;&lt;p&gt;</option>
+            <option value="answer2">&lt;p&gt;&lt;/p&gt;</option>
+            <option value="answer3">&lt;P&gt;&lt;/p&gt;</option>
+            <option value="answer4">&lt;P&gt;&lt;/P&gt;</option>
+        </select>
+
+        <p><strong>Question 3: What is correct XHTML for a line break?</strong></p>
+        <select name="question3" id="question3">
+            <option value="unanswered" disabled selected hidden>Select your answer</option>
+            <option value="answer1">&lt;break /&gt;</option>
+            <option value="answer2">&lt;br /&gt;</option>
+            <option value="answer3">&lt;br&gt;</option>
+            <option value="answer3">&lt;break&gt;</option>
+        </select>
+
+        <hr>
+
+        <input type="button" value="Check Answers" onclick="checkAnswers()">
+
+        <p>Your score is: <input type="text" disabled name="scoreBox" id="scoreBox"></p>
+    </form>
+</body>
+</html>
