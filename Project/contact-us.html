@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Spectrum Hotel | Homepage</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="navbar">
+            <img src="images/logo.png" />
+            <nav>
+                <li><a href="index.html">Hotel & Spa</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a id="active" href="contact-us.html">Contact Us</a></li>
+                <li><a href="login.html">Reservations</a></li>
+            </nav>
+        </div>
+        
+        <h1 class="section-heading">Contact Us</h1>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Please fill out the form below to contact us.</th>
+                    </tr>
+                </thead>
+                <form>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="forename">Your Name</label>
+                            </td>
+                            <td>
+                                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email Address</label>
+                            </td>
+                            <td>
+                                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="query">Your message</label>
+                            </td>
+                            <td>
+                                <textarea name="query" id="query" rows="10" required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button value="Submit">Submit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </form>
+            </table>
+        </div>
+
+        <div id="footer">
+            <br>
+            <br>
+            <span id="footRight">
+                Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a> •
+                <a target="_BLANK" href="https://github.com/MythicalCuddles/melissabrennan.dev">Source Code</a> • 
+                Images from <a target="_BLANK" href="https://www.unsplash.com">Unsplash</a>
+            </span>
+            <span id="footLeft">
+                Copyright 2020 Melissa Brennan
+            </span>
+        </div>
+    </div>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

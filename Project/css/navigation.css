@@ -1,0 +1,44 @@
+#navbar {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#navbar img {
+    width: 400px;
+}
+
+#navbar nav {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(78, 18, 75);
+}
+
+#navbar nav li {
+    display: inline-block;
+}
+
+#navbar nav li a {
+    display: inline-block;
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+#navbar nav li a:hover:not(#active) {
+    background-color: rgb(94, 13, 13);
+}
+
+#navbar nav #active {
+    background-color: rgb(204, 84, 70);
+}
+
+@media screen and (max-width: 600px) {
+    #navbar nav li,
+    #navbar nav li a {
+        float: none;
+        display: block;
+    }
+}

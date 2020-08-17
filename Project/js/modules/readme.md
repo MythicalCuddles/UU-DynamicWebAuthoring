@@ -1,0 +1,1 @@
+These modules were designed early on to try to allow classes to be used to create objects. I was unable to get the moduled javascript files to work with the non-moduled ones, so I scrapped this and decided to include the classes directly into main.js. These are here to show what I had attempted to do and how I worked around the problem to achieve what I wanted to achieve.

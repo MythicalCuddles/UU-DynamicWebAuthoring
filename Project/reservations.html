@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Spectrum Hotel | Homepage</title>
+</head>
+<body onload="reservationsOnLoad()">
+    <div id="main-container">
+        <div id="navbar">
+            <img src="images/logo.png" />
+            <nav>
+                <li><a href="index.html">Hotel & Spa</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a id="active" href="reservations.html">Reservations</a></li>
+                <li><a href="" onclick="logout()">Logout</a></li>
+            </nav>
+        </div>
+        
+        <h1 class="section-heading">Reservations</h1>
+        <div>
+            <table id="reservationsTable">
+                <thead>
+                    <tr>
+                        <th>Your Reservations</th>
+                        <th>
+                            <input type="button" value="Create Reservation" onclick="window.location = './new-reservation.html';">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody> <!-- managed in JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="footer">
+            <br>
+            <br>
+            <span id="footRight">
+                Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a> •
+                <a target="_BLANK" href="https://github.com/MythicalCuddles/melissabrennan.dev">Source Code</a> • 
+                Images from <a target="_BLANK" href="https://www.unsplash.com">Unsplash</a>
+            </span>
+            <span id="footLeft">
+                Copyright 2020 Melissa Brennan
+            </span>
+        </div>
+    </div>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Spectrum Hotel | Homepage</title>
+</head>
+<body onload="loginOnLoad()">
+    <div id="main-container">
+        <div id="navbar">
+            <img src="images/logo.png" />
+            <nav>
+                <li><a href="index.html">Hotel & Spa</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a id="active" href="reservations.html">Reservations</a></li>
+            </nav>
+        </div>
+        
+        <h1 class="section-heading">Reservations - Your Account</h1>
+        <div>
+            <table id="loginToAccount">
+                <thead>
+                    <tr>
+                        <th colspan="2">Login</th>
+                    </tr>
+                </thead>
+                <form>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="lEmail">Email Address</label>
+                            </td>
+                            <td>
+                                <input type="text" name="lEmail" id="lEmail" placeholder="Email Address">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lPassword">Password</label>
+                            </td>
+                            <td>
+                                <input type="password" name="lPassword" id="lPassword" placeholder="Password" autocomplete="on">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="Login" onclick="login()">
+                                <input type="button" value="Alternatively, Create an Account" onclick="showCreateAccount()">
+                            </td>
+                        </tr>
+                    </tbody>
+                </form>
+            </table>
+            <table id="createAccount" style="display: none;"> <!-- style is set as it is changed in JS main.js -->
+                <thead>
+                    <tr>
+                        <th colspan="2">Create your Account</th>
+                    </tr>
+                </thead>
+                <form>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="forename">First Name</label>
+                            </td>
+                            <td>
+                                <input type="text" name="forename" id="forename" placeholder="First Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="surname">Surname</label>
+                            </td>
+                            <td>
+                                <input type="text" name="surname" id="surname" placeholder="Surname">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="caEmail">Email Address</label>
+                            </td>
+                            <td>
+                                <input type="text" name="caEmail" id="caEmail" placeholder="Email Address">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="caPassword">Password</label>
+                            </td>
+                            <td>
+                                <input type="password" name="caPassword" id="caPassword" placeholder="Password" autocomplete="on">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="Create Account" onclick="createAccount()">
+                                <input type="button" value="Alternatively, Login" onclick="showLogin()">
+                            </td>
+                        </tr>
+                    </tbody>
+                </form>
+            </table>
+        </div>
+
+        <div id="footer">
+            <br>
+            <br>
+            <span id="footRight">
+                Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a> •
+                <a target="_BLANK" href="https://github.com/MythicalCuddles/melissabrennan.dev">Source Code</a> • 
+                Images from <a target="_BLANK" href="https://www.unsplash.com">Unsplash</a>
+            </span>
+            <span id="footLeft">
+                Copyright 2020 Melissa Brennan
+            </span>
+        </div>
+    </div>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

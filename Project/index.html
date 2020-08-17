@@ -1,12 +1,136 @@
-<!-- Main Webpage by Melissa Brennan -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+    <link rel="stylesheet" href="css/style.css">
     
+    <title>Spectrum Hotel | Homepage</title>
+</head>
+<body onload="onLoad()">
+    <div id="main-container">
+        <div id="navbar">
+            <img src="images/logo.png" />
+            <nav>
+                <li><a id="active" href="index.html">Hotel & Spa</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="login.html">Reservations</a></li>
+            </nav>
+        </div>
+        <div class="slideshow-container">
+            <div class="myImages fade">
+                <div class="captionText">
+                    Photo by 
+                    <a href="https://unsplash.com/@niklanus?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nik Lanús</a> 
+                    on 
+                    <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                </div>
+                <img src="images/nik-lanus-YMOHw3F1Hdk-unsplash.jpg" alt="Photo of pillows on a bed">
+            </div>
+            <div class="myImages fade">
+                <div class="captionText">
+                    Photo by 
+                    <a href="https://unsplash.com/@paulpostema?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Paul Postema</a> 
+                    on 
+                    <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></div>
+                <img src="images/paul-postema-mr0Dp231IEw-unsplash.jpg" alt="Photo of a large room with a bed and tv.">
+            </div>
+            <div class="myImages fade">
+                <div class="captionText">
+                    Photo by 
+                    <a href="https://unsplash.com/@runnyrem?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">runnyrem</a> 
+                    on 
+                    <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></div>
+                <img src="images/runnyrem-LfqmND-hym8-unsplash.jpg" alt="Photo of the hallway leading to rooms on the left and right">
+            </div>
+    
+            <a class="prev" onclick="nextImage(-1)">&#10094;</a>
+            <a class="next" onclick="nextImage(1)">&#10095;</a>
+        </div>
+        
+        <div class="reservation-block">
+            <h1 class="section-heading">Book Your Reservation</h1>
+                <!--<form class="reservation-form" name="checkInDates">
+                    <div class="section-block">
+                        <label for="checkIn">Check In Date</label>
+                        <input type="date" name="checkIn" id="checkIn" required>
+                    </div>
+                    <div class="section-block">
+                        <label for="checkOut">Check Out Date</label>
+                        <input type="date" name="checkOut" id="checkOut" required>
+                    </div>
+                    <div class="section-block">
+                        <input type="button" value="Continue" id="btnContinue" onclick="checkDates()">
+                    </div>
+                </form>-->
+            <a href="login.html"><input type="button" value="Make a Reservation" id="btnContinue"></a>
+        </div>
+
+        <!-- Hotel Info -->
+        <h1 class="section-heading">Hotel</h1>
+        <div class="section-container">
+            <div class="section-block">
+                <img class="section-image" src="images/paul-postema-mr0Dp231IEw-unsplash.jpg" alt="Photo of a large room with a bed and tv.">
+            </div>
+            <div class="section-block">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum dixisset, finem ille. Et quidem iure fortasse, sed tamen non gravissimum est testimonium multitudinis. Idcirco enim non desideraret, quia, quod dolore caret, id in voluptate est. Quamquam id quidem licebit iis existimare, qui legerint. Duo Reges: constructio interrete. Quis suae urbis conservatorem Codrum, quis Erechthei filias non maxime laudat? Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Sed erat aequius Triarium aliquid de dissensione nostra iudicare.
+                </p>
+            </div>
+            <div class="section-block">
+                <p>
+                    Ut alios omittam, hunc appello, quem ille unum secutus est. Nihil ad rem! Ne sit sane; Idemne potest esse dies saepius, qui semel fuit? Quid de Platone aut de Democrito loquar? Sed finge non solum callidum eum, qui aliquid improbe faciat, verum etiam praepotentem, ut M. Deinde disputat, quod cuiusque generis animantium statui deceat extremum. Nihil enim iam habes, quod ad corpus referas; Claudii libidini, qui tum erat summo ne imperio, dederetur.
+                </p>
+            </div>
+            <div class="section-block">
+                <p>
+                    Eam tum adesse, cum dolor omnis absit; Non pugnem cum homine, cur tantum habeat in natura boni; An me, inquis, tam amentem putas, ut apud imperitos isto modo loquar? Nec vero sum nescius esse utilitatem in historia, non modo voluptatem. Est enim tanti philosophi tamque nobilis audacter sua decreta defendere. Nunc omni virtuti vitium contrario nomine opponitur. Ex quo, id quod omnes expetunt, beate vivendi ratio inveniri et comparari potest. Audio equidem philosophi vocem, Epicure, sed quid tibi dicendum sit oblitus es.
+                </p>
+            </div>
+        </div>
+
+        <!-- Spa Info-->
+        <h1 class="section-heading">Spa</h1>
+        <div class="section-container">
+            <div class="section-block">
+                <img class="section-image" src="images/camille-brodard-kmile-feminine-creative-designer-VxAwTeiqDao-unsplash.jpg" alt="Photo of spa lotion, towel, a candle and flowers">
+            </div>
+            <div class="section-block">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum dixisset, finem ille. Et quidem iure fortasse, sed tamen non gravissimum est testimonium multitudinis. Idcirco enim non desideraret, quia, quod dolore caret, id in voluptate est. Quamquam id quidem licebit iis existimare, qui legerint. Duo Reges: constructio interrete. Quis suae urbis conservatorem Codrum, quis Erechthei filias non maxime laudat? Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Sed erat aequius Triarium aliquid de dissensione nostra iudicare.
+                </p>
+            </div>
+            <div class="section-block">
+                <p>
+                    <img class="section-image" src="images/camille-brodard-kmile-feminine-creative-designer-VxAwTeiqDao-unsplash.jpg" alt="Photo of spa lotion, towel, a candle and flowers">
+                </p>
+            </div>
+            <div class="section-block">
+                <p>
+                    Eam tum adesse, cum dolor omnis absit; Non pugnem cum homine, cur tantum habeat in natura boni; An me, inquis, tam amentem putas, ut apud imperitos isto modo loquar? Nec vero sum nescius esse utilitatem in historia, non modo voluptatem. Est enim tanti philosophi tamque nobilis audacter sua decreta defendere. Nunc omni virtuti vitium contrario nomine opponitur. Ex quo, id quod omnes expetunt, beate vivendi ratio inveniri et comparari potest. Audio equidem philosophi vocem, Epicure, sed quid tibi dicendum sit oblitus es.
+                </p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <br>
+            <br>
+            <span id="footRight">
+                Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a> •
+                <a target="_BLANK" href="https://github.com/MythicalCuddles/melissabrennan.dev">Source Code</a> • 
+                Images from <a target="_BLANK" href="https://www.unsplash.com">Unsplash</a>
+            </span>
+            <span id="footLeft">
+                Copyright 2020 Melissa Brennan
+            </span>
+        </div>
+    </div>
 </body>
+
+<script src="js/main.js"></script>
+<script src="js/slideshow.js"></script>
+
 </html>

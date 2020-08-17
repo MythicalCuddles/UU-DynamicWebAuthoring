@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Spectrum Hotel | Homepage</title>
+</head>
+<body onload="newReservationOnLoad()">
+    <div id="main-container">
+        <div id="navbar">
+            <img src="images/logo.png" />
+            <nav>
+                <li><a href="index.html">Hotel & Spa</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a id="active" href="reservations.html">Reservations</a></li>
+                <li><a href="" onclick="logout()">Logout</a></li>
+            </nav>
+        </div>
+        
+        <h1 class="section-heading">Create Reservation</h1>
+        <div>
+            <table id="createReservation">
+                <thead>
+                    <tr>
+                        <th>New Reservation</th>
+                        <th>
+                            <input type="button" value="Create Reservation" onclick="createReservation()">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="2">Book your dates</th>
+                    </tr>
+                    <tr>
+                        <td>Check-in Date</td>
+                        <td><input type="date" name="checkInDate" id="checkInDate" onchange="checkDates()"></td>
+                    </tr>
+                    <tr>
+                        <td>Check-out Date</td>
+                        <td><input type="date" name="checkOutDate" id="checkOutDate" onchange="checkDates()"></td>
+                    </tr>
+                    <tr><p id="checkDatesIfError"></p></tr>
+                    <tr>
+                        <th colspan="2">Select your room</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">We offer different sized rooms for different prices. You can see them below.</td>
+                    </tr>
+                    <tr>
+                        <td>Room Size</td>
+                        <td>
+                            <select name="roomSize" id="roomSize" onchange="roomSelected()"> <!-- JS adds more options from array -->
+                                <option value="pleaseSelect" name="unselected" id="unselected" selected hidden disabled>Please select</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Confirmation</th>
+                    </tr>
+                    <tr>
+                        <td>Room Size: </td>
+                        <td id="showRoomSize">(Please select a room size above)</td>
+                    </tr>
+                    <tr>
+                        <td>Check-in Date: </td>
+                        <td id="showCheckInDate">(Please select when you'll be checking in)</td>
+                    </tr>
+                    <tr>
+                        <td>Check-out Date: </td>
+                        <td id="showCheckOutDate">(Please select when you'll be checking out)</td>
+                    </tr>
+                    <tr>
+                        <td>Duration: </td>
+                        <td id="showDuration">(Please select your checking in and out dates)</td>
+                    </tr>
+                    <tr>
+                        <td>Cost Per Night: </td>
+                        <td id="showCostPerNight">(Please select your room size)</td>
+                    </tr>
+                    <tr>
+                        <td>Total Cost for Stay: </td>
+                        <td id="showTotalCost">(Please select all values required above)</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th colspan="2">
+                        <input type="button" value="Create Reservation" onclick="createReservation()">
+                    </th>
+                </tfoot>
+            </table>
+        </div>
+
+        <div id="footer">
+            <br>
+            <br>
+            <span id="footRight">
+                Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a> •
+                <a target="_BLANK" href="https://github.com/MythicalCuddles/melissabrennan.dev">Source Code</a> • 
+                Images from <a target="_BLANK" href="https://www.unsplash.com">Unsplash</a>
+            </span>
+            <span id="footLeft">
+                Copyright 2020 Melissa Brennan
+            </span>
+        </div>
+    </div>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
