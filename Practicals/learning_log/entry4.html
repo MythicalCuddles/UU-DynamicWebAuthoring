@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Learning Log</title>
+        <link rel="stylesheet" href="css/master.css">
+        <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <h1>COM353 Dynamic Web Authoring</h1>
+            <h2>Learning Log - Melissa Brennan</h2>
+
+            <nav>
+                <a href="index.html">Practical Entries</a>
+            </nav>
+
+            <hr />
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Entry 4 - JavaScript Looking at Arrays and Loops</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3">19<sup>th</sup> June 2020</th>
+                    </tr>
+                    <tr>
+                        <th width="30%"><a href="entry3.html">Previous Entry</a></th>
+                        <th width="40%"><a href="#bottomLink" id="topLink">Go to Bottom</a></th>
+                        <th width="30%"><a href="entry5.html">Next Entry</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h3>Working with Arrays</h3>
+                            <p>
+                                For the first task, an array needed to be created to store multiple values.
+                                You can see in Fig.1 that I had created a total of 3 arrays. Each of these arrays, called universities, ulsterCampuses and ulsterCourses, hold their own data which can be used in the code.
+                            </p>
+                            <p>
+                                The first array is created by instantiating the array class. We can define lengths of the array, which in this case the expected array length is 2.
+                                We can add values to this array by setting the index position to the specified value.
+                            </p>
+                            <p>
+                                The second array is also created by instantiating the array class, but a length is not defined. This means that the array can have values stored in multiple different positions.
+                                Along with instantiating the array class, we can use the push() function which allows us to add a value to the end of the array.
+                            </p>
+                            <p>
+                                The last array is created by declaring and initialising it with multiple values using the square brackets and separating each value with a comma.
+                            </p>
+                            <figure>
+                                <img src="media/entry4/t1arrays.png" alt="JavaScript Code">
+                                <figcaption>Fig.1 - JavaScript creating arrays multiple ways and outputing values.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/entry4/t1output.png" alt="Output of Fig.1">
+                                <figcaption>Fig.2 - Output of Fig.1.</figcaption>
+                            </figure>
+                            <p>
+                                The output in Fig.2 can be defined in the code by selecting which elements of the array want to be used.
+                            </p>
+                            <br />
+
+                            <h3>Working with Functions</h3>
+                            <p>
+                                As seen in Fig.3, we're able to create a function to display the output to the user. In the code below, a function called displayText() was added to the code.
+                                Using the displayText() function, we're able to pass a parameter though to have it displayed to the user. We can replace the code at the bottom of Fig.1 to call this function instead and pass the string as a parameter.
+                                The output of the code seen in Fig.3 doesn't change, and remains the same as the output seen in Fig.2 (apart from the random number generator changing which values get displayed).
+                            </p>
+                            <figure>
+                                <img src="media/entry4/t2functions.png" alt="JavaScript Code">
+                                <figcaption>Fig.3 - Using a function to to call and pass a value to be displayed.</figcaption>
+                            </figure>
+                            <br />
+
+                            <h3>Working with the Form</h3>
+                            <p>
+                                We can see in Fig.4 that we can create a form to allow users to input information into the input elements. Using the input elements, we can collect information such as the users name.
+                                We can also use select elements to allow the user to select from a list of options. In Fig.4, the options haven't been added in the HTML, but instead are added using JavaScript, which can be seen in Fig.5.
+                                JavaScript code can be run when the page has loaded by calling the onload event within the body element. In Fig.4, you can see that the onload event calls a function called onLoad(), which is seen in Fig.5.
+                            </p>
+                            <figure>
+                                <img src="media/entry4/t2html.png" alt="JavaScript Code">
+                                <figcaption>Fig.4 - HTML to create a form for user input.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/entry4/t2onload.png" alt="JavaScript Code">
+                                <figcaption>Fig.5 - JavaScript code that is run when the webpage is loaded.</figcaption>
+                            </figure>
+                            <p>
+                                In Fig.5, we can see that when the onLoad() function is called, the arrays are created. We can also loop through these arrays to create new elements on the webpage. This is what is being done to add the options for the dropdown boxes.
+                            </p>
+                            <p>
+                                In Fig.6 and Fig.7, we have the Display button set to call the function displayInformation(). This function (in Fig.6) collects the information from the form, and displays text under the form using the information provided.
+                            </p>
+                            <figure>
+                                <img src="media/entry4/t2displayfunction.png" alt="JavaScript Code">
+                                <figcaption>Fig.6 - JavaScript function that is called when user clicks display button.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/entry4/t2output.png" alt="JavaScript Code">
+                                <figcaption>Fig.7 - The result (with the form on the webpage, and the output from the code when display is clicked).</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th width="30%"><a href="entry3.html">Previous Entry</a></th>
+                        <th width="40%"><a href="#topLink" id="bottomLink">Go to Top</a></th>
+                        <th width="30%"><a href="entry5.html">Next Entry</a></th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <hr />
+            <footer class="customFont">
+                <p>
+                    Learning Log by <a target="_BLANK" href="https://com353.melissabrennan.dev">Melissa Brennan</a> • Student ID B00714027<br />
+                    All code is available to view on <a target="_BLANK" href="https://github.com/MythicalCuddles/UU-DynamicWebAuthoring">my GitHub</a><br />
+                    Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a><br />
+                </p>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                    </a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

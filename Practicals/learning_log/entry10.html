@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Learning Log</title>
+        <link rel="stylesheet" href="css/master.css">
+        <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <h1>COM353 Dynamic Web Authoring</h1>
+            <h2>Learning Log - Melissa Brennan</h2>
+
+            <nav>
+                <a href="index.html">Practical Entries</a>
+            </nav>
+
+            <hr />
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Entry 10 - Image Swaps & Animation</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3">27<sup>th</sup> June 2020</th>
+                    </tr>
+                    <tr>
+                        <th width="30%"><a href="entry9.html">Previous Entry</a></th>
+                        <th width="40%"><a href="#bottomLink" id="topLink">Go to Bottom</a></th>
+                        <th width="30%"><a onclick="alert('No new entries.');">Next Entry</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h3>Image Rollovers</h3>
+                            <p>
+                                For the first task, I had to create a rollover image effect. I did this through using the onMouseOut event and onClick events of the image element, as seen in Fig.1.
+                                A live demo can be done <a href="../practical_10/task_1/index.html">here</a>.
+                            </p>
+                            <p>
+                                For the first task, making use of the onMouseOut event allowed me to execute a function everytime the users mouse left the boundaries of the image. This allowed me to run the function I created called userMouseOut(), which changes the image to the next image within the array, and keeps track of which image the user is seeing.
+                            </p>
+                            <p>
+                                Due to the fact that the image that is being shown is stored as well, I can have an onClick event run, so when the user clicks on the image, a link can be retrieved from an array and the user can be directed to the unique link.
+                            </p>
+                            <figure>
+                                <img src="media/entry10/t1html.png" alt="HTML code">
+                                <figcaption>Fig.1 - HTML for Image Rollover</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/entry10/t1js.png" alt="JavaScript code">
+                                <figcaption>Fig.2 - JavaScript for Image Rollover</figcaption>
+                            </figure>
+                            <br>
+
+                            <h3>Slideshow</h3>
+                            <p>
+                                For this task, I made use of next and previous buttons, which are displayed on the sides of the image. A live demo can be done <a href="../practical_10/task_2/index.html">here</a>.
+                            </p>
+                            <p>
+                                When the user clicks the next or previous buttons, the nextImage() function is called. A parameter is passed to amend the value of onImage, which is the variable keeping track of what image is being shown to the user.
+                            </p>
+                            <p>
+                                When the showImage() function is called through the next or previous buttons function, all of the images on the webpage are set to be hidden from sight by the use of a loop. The onImage variable then allows for the image that the user is to be viewing to be displayed.
+                            </p>
+                            <figure>
+                                <img src="media/entry10/t2html.png" alt="HTML code">
+                                <figcaption>Fig.3 - HTML for Slideshow</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/entry10/t2js.png" alt="JavaScript code">
+                                <figcaption>Fig.4 - JavaScript for Slideshow</figcaption>
+                            </figure>
+                            <br>
+
+                            <h3>Animated Advertising Banner</h3>
+                            <p>
+                                For this task, I used the setTimeout function to create a timer that calls the function changeImages every 3 seconds. The variable time can be set in seconds even though setTimeout accepts milliseconds as I am multiplying the value of time by 1000, which converts it to seconds.
+                            </p>
+                            <figure>
+                                <img src="media/entry10/t3timeout.png" alt="JavaScript code">
+                                <figcaption>Fig.5 - JavaScript for Animated Banner</figcaption>
+                            </figure>
+                            <p>
+                                Like task 1, shown in Fig 1 and 2, the images are stored in an array for this task. However, when the changeImages function is called, the image element on the webpage has the source attribute changed to a source link to the image.
+                                The variable keeping track of which image is being shown is also amended, before another timer is set to change the image again.
+                            </p>
+                            <figure>
+                                <img src="media/entry10/t3js.png" alt="JavaScript code">
+                                <figcaption>Fig.6 - JavaScript for Animated Banner</figcaption>
+                            </figure>
+
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th width="30%"><a href="entry9.html">Previous Entry</a></th>
+                        <th width="40%"><a href="#topLink" id="bottomLink">Go to Top</a></th>
+                        <th width="30%"><a onclick="alert('No new entries.');">Next Entry</a></th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <hr />
+            <footer class="customFont">
+                <p>
+                    Learning Log by <a target="_BLANK" href="https://com353.melissabrennan.dev">Melissa Brennan</a> • Student ID B00714027<br />
+                    All code is available to view on <a target="_BLANK" href="https://github.com/MythicalCuddles/UU-DynamicWebAuthoring">my GitHub</a><br />
+                    Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a><br />
+                </p>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                    </a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

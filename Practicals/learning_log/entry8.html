@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Learning Log</title>
+        <link rel="stylesheet" href="css/master.css">
+        <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <h1>COM353 Dynamic Web Authoring</h1>
+            <h2>Learning Log - Melissa Brennan</h2>
+
+            <nav>
+                <a href="index.html">Practical Entries</a>
+            </nav>
+
+            <hr />
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Entry 8 - Form Validation</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3">21<sup>st</sup> June 2020</th>
+                    </tr>
+                    <tr>
+                        <th width="30%"><a href="entry7.html">Previous Entry</a></th>
+                        <th width="40%"><a href="#bottomLink" id="topLink">Go to Bottom</a></th>
+                        <th width="30%"><a href="entry9.html">Next Entry</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h3>Scripting a Form</h3>
+                            <p>
+                                For the first part of the task, I created a form on the webpage that would request for users information to be inputted.
+                                The user is able to add information such as their name, email, phone number and favourite book categories.
+                                As per the task, I had set up the name attribute of each of the input elements to the required names as defined in the task.
+                                The code seen in Fig.1 outputs the webpage seen in Fig.2.
+                            </p>
+                            <figure>
+                                <img src="media/entry8/p1.png" alt="HTML creating a form for a user survey">
+                                <figcaption>Fig.1 - Form code</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/entry8/p1output.png" alt="User Survey output to user">
+                                <figcaption>Fig.2 - Form as displayed to user</figcaption>
+                            </figure>
+                            <br>
+
+                            <h3>Name Validation</h3>
+                            <p>
+                                For the second part of the task, I created a function that validates the name entered by the user.
+                                I am using a regex expression to check that the user has only entered characters within the range of A-Z, and allowing both uppercase and lowercase.
+                                If the name doesn't match the regex expression, the user is alerted to this issue. I also make it select the textbox for the username, making it easier for the user to change their value.
+                                The code for this can be seen in Fig.3
+                            </p>
+                            <figure>
+                                <img src="media/entry8/p2.png" alt="JavaScript to validate name">
+                                <figcaption>Fig.3 - JavaScript to validate name</figcaption>
+                            </figure>
+                            <br>
+
+                            <h3>Phone Number Validation</h3>
+                            <p>
+                                For this part of the task, I was given code and asked to explain what it does.
+                                I have commented each line of the code, which can be seen in Fig.4.
+                            </p>
+                            <figure>
+                                <a target="_BLANK" href="media/entry8/p3.png"><img src="media/entry8/p3.png" alt="JavaScript to validate phone number">
+                                <figcaption>Fig.4 - Validate phone number (click to view enlarged)</figcaption></a>
+                            </figure>
+                            <br>
+
+                            <h3>Inserting into onSubmit() & validAll() function (Parts II, VI, VIII & IX)</h3>
+                            <p>
+                                For this part, I amended the onSubmit() function to call a function called validAll(). All the functions created in this task are ran in there.
+                                If any of the functions return false, the code within validAll() will return false. This will then set allInfoValid = false, which will cause console.assert to run.
+                                If all the functions return true, none of the return false statements are ran within validAll(), and therefore will have allInfoValid set to true.
+                            </p>
+                            <p>
+                                You can see these as comments on Fig.5
+                            </p>
+                            <figure>
+                                <img src="media/entry8/p4.png" alt="JavaScript to validate phone number">
+                                <figcaption>Fig.5 - Validate all functions on submit</figcaption>
+                            </figure>
+                            <br>
+
+                            <h3>Email Validation</h3>
+                            <p>
+                                For this part of the task, I was given code and asked to explain what it does.
+                                I have commented each line of the code, which can be seen in Fig.6.
+                            </p>
+                            <figure>
+                                <img src="media/entry8/p5.png" alt="JavaScript to validate email">
+                                <figcaption>Fig.6 - Validate email address code</figcaption>
+                            </figure>
+                            <br>
+
+                            <h3>Choice Validation</h3>
+                            <p>
+                                For this part, I was tasked with adding the validChoice function(). I needed to complete function by adding the two missing statements.
+                                This, along with code explainations, can be seen in Fig.7.
+                            </p>
+                            <figure>
+                                <img src="media/entry8/choicevalidation.png" alt="JavaScript to validate choice">
+                                <figcaption>Fig.6 - Validate user choice JavaScript</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th width="30%"><a href="entry7.html">Previous Entry</a></th>
+                        <th width="40%"><a href="#topLink" id="bottomLink">Go to Top</a></th>
+                        <th width="30%"><a href="entry9.html">Next Entry</a></th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <hr />
+            <footer class="customFont">
+                <p>
+                    Learning Log by <a target="_BLANK" href="https://com353.melissabrennan.dev">Melissa Brennan</a> • Student ID B00714027<br />
+                    All code is available to view on <a target="_BLANK" href="https://github.com/MythicalCuddles/UU-DynamicWebAuthoring">my GitHub</a><br />
+                    Background pattern from <a target="_BLANK" href="https://www.toptal.com/designers/subtlepatterns/">Toptal Subtle Patterns</a><br />
+                </p>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                    </a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

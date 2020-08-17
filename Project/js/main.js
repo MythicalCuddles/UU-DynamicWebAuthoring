@@ -248,6 +248,7 @@ function reservationsOnLoad() {
     
     if(!email) {
         window.location = "./login.html";
+		return;
     }
 
     var reservations = getAllStoredReservations();
@@ -352,6 +353,14 @@ function calculateTotalCost(pricePerNight, duration) {
 var user_reservation, setDates = false, setRoom = false;
 
 function newReservationOnLoad() {
+	var email = getCookie("email");
+    
+    if(!email) {
+        window.location = "./login.html";
+		return;
+    }
+	
+	
     user_reservation = new Reservation();
 
     // Add elements to the room size select box.
